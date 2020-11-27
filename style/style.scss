@@ -1,0 +1,97 @@
+
+
+$colors:(
+primary: rgb(255, 255,255),
+shadow: rgb(255,255,255)
+);
+
+@function color($color-name){ 
+    @return map-get($colors, $color-name )
+};
+    
+html,
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    .header{
+        background-image: url("/assets/view2.jpeg");
+        background-position: center;
+         height: 45rem;
+         opacity: 0.8;
+         @media screen and (max-width : 380px) {
+             height: 30rem;
+         }
+         @media screen and (min-width: 380px) and (max-width : 745px ) {
+            height: 35rem;
+
+        }
+         
+       .adress{
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           align-items: center;
+           justify-items: center;
+           height: 45rem;
+           //creare un header
+           h1{
+               margin: 60px auto 0 34%;
+               padding-top: 20px;
+               font-size: 110px;
+               color: color(primary);
+               letter-spacing: 3px;
+               @media screen and (max-width : 380px) {
+                    margin: 0 auto 0; 
+                    font-size: 80px;
+               }
+               @media screen and (min-width: 380px) and (max-width : 745px ) {
+                margin: 0 auto 0;
+                
+            }
+           }
+           //search input
+           #search{
+               
+               border-radius: 25px;
+               margin: 1rem 0 0  -5rem;
+               box-shadow: 0 25px 35px  rgb(0,0,0);//color(shadow);
+               padding: 0;
+               @media screen and (max-width : 380px) {
+                font-size: 15px;
+                margin: 1rem 0 0  1rem;
+                 :hover{
+                    transform: scale(3,3);
+                    box-shadow: 1px 5px 8px color(shadow);
+                    background-color: black;
+                }
+            }
+           .search-input{
+               margin: 0;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 8px;
+            border: none;
+            
+           }
+           #sear{
+               width: 20px;
+               height: 20px;
+           }
+
+       } 
+    }
+}
+    .content{
+        height: 60rem;
+        background-color: black;
+    }
+}
+
+
+
+//phone view &landscape
+

@@ -1,1 +1,104 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body .header {
+  background-image: url("/assets/view2.jpeg");
+  background-position: center;
+  height: 45rem;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 380px) {
+  body .header {
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 745px) {
+  body .header {
+    height: 35rem;
+  }
+}
+
+body .header .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  height: 45rem;
+}
+
+body .header .adress h1 {
+  margin: 60px auto 0 34%;
+  padding-top: 20px;
+  font-size: 110px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 380px) {
+  body .header .adress h1 {
+    margin: 0 auto 0;
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 745px) {
+  body .header .adress h1 {
+    margin: 0 auto 0;
+  }
+}
+
+body .header .adress #search {
+  border-radius: 25px;
+  margin: 1rem 0 0  -5rem;
+  -webkit-box-shadow: 0 25px 35px black;
+          box-shadow: 0 25px 35px black;
+  padding: 0;
+}
+
+@media screen and (max-width: 380px) {
+  body .header .adress #search {
+    font-size: 15px;
+    margin: 1rem 0 0  1rem;
+  }
+  body .header .adress #search :hover {
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
+    -webkit-box-shadow: 1px 5px 8px white;
+            box-shadow: 1px 5px 8px white;
+    background-color: black;
+  }
+}
+
+body .header .adress #search .search-input {
+  margin: 0;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 8px;
+  border: none;
+}
+
+body .header .adress #search #sear {
+  width: 20px;
+  height: 20px;
+}
+
+body .content {
+  height: 60rem;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
