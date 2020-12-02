@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lumière - cinema online </title>
+    <!--google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300;400;500&family=Lobster&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style/style.css">
@@ -11,18 +12,59 @@
 </head>
 <body>
     <!--creare header land page con  search icon -->
-    <header class="header">
+    <header  id = "header" class="header">
         <div class="adress">
             <h1><strong><i>lumière</i></strong></h1>
            
             <div id="search">
-           <input  class = " search-input "type="text" placeholder="cerca">
+           <input  id = "search-bar" class = " search-input "type="text" placeholder="cerca">
            
             </div>
         </div>
     </header>
 
-    <section class="content"></section>
+
+   <div class="film-wraper">
+       <!--<div class = "movie" id="movie-1">
+           <div class = "cover" id ="cover1" style= " background-image: url(https://m.media-amazon.com/images/M/MV5BYmJhNWMyOTUtZjgwZS00YzdjLTk1MmMtODJlOTExMDQ3MDU5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg);">fgdfgdfgfdgdf</div>
+           <h2 class="title1">title</h4>
+       </div>-->
+
+       
+   </div>
+   
+    <!--footer-->
+    <footer class="footer">
+
+    <div class="login">
+        <button id="button1">LOG IN</button><br>
+
+        <div id="log">
+           <label for="gmail"> E-mail</label><br>
+           <input type="text" placeholder=" Enter e-mail"><br>
+           <label for="password">Password</label><br>
+           <input type="password" placeholder="Enter  Password">
+        </div>
+    </div>
+
+  <div class="signup">
+      <button id="button2">Sign Up</button>
+
+     <div id="sign">
+         <label for="name">Name</label><br>
+         <input type="text" name="name" placeholder=" Name "><br>
+         <label for="surname">Sur name</label><br>
+         <input type="text" placeholder="Surname"><br>
+         <label for="email"> E-mail</label><br>
+         <input type="text" placeholder=" Enter e-mail "><br>
+         <label for="password">Set Password</label><br>
+         <input type="password" placeholder="Set Password"><br>
+     </div>
+</div>
+
+    </footer>
+    <div class="link"><a href="#header">lumière - cinema online</a></div>
+    <div class="space"></div>
     <script src="/src/script.js"></script>
 </body>
 </html>
